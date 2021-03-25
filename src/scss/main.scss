@@ -1,0 +1,98 @@
+@import 'reset.scss';
+@import 'section_first.scss';
+@import 'section_description.scss';
+@import 'statistics.scss';
+@import 'footer.scss';
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  color: white;
+  font-size: 21px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+}
+
+header {
+  height: 673px;
+  background-image: url('assets/img/header_BG.png');
+
+  .container {
+    max-width: 960px;
+    height: 100%;
+
+    margin: 0 auto;
+    text-align: center;
+    .title {
+      padding-top: 70px;
+    }
+    .logo_text {
+      text-align: left;
+      margin-top: 200px;
+      margin-left: 15%;
+      font-family: 'Open Sans', sans-serif;
+
+      .text_logo_fist {
+        color: #b7b7b7;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .text_logo_second {
+        font-size: 46px;
+        font-weight: bold;
+
+        color: #ffff;
+
+        line-height: 1;
+        width: 100%;
+      }
+      .text_logo_descr {
+        color: #b7b7b7;
+        width: 420px;
+        letter-spacing: 1px;
+        font-size: 11px;
+        margin-left: 8px;
+      }
+
+      @media (max-width: 700px) {
+        .text_logo_fist {
+          font-size: 13px;
+        }
+        .text_logo_second {
+          font-size: 35px;
+        }
+        .text_logo_descr {
+          font-size: 11px;
+        }
+      }
+      @media (max-width: 600px) {
+        .text_logo_fist {
+          font-size: 11px;
+        }
+        .text_logo_second {
+          font-size: 29px;
+        }
+        .text_logo_descr {
+          font-size: 11px;
+          width: 320px;
+        }
+      }
+      @media (max-width: 370px) {
+        margin-left: 8%;
+        .text_logo_fist {
+          font-size: 11px;
+        }
+        .text_logo_second {
+          font-size: 29px;
+        }
+        .text_logo_descr {
+          font-size: 9px;
+          width: 250px;
+        }
+      }
+    }
+  }
+}
